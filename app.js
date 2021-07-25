@@ -88,7 +88,6 @@ app.get('/', async (req, res) => {
 
   res.render('pages/home', {
     ...defaults,
-    collections,
     home
   })
 })
