@@ -2,11 +2,20 @@ nav.navigation
   .navigation_wrapper 
     a.navigation_link(href="/")
       | Gasco Home Loans
-  
+
       svg.navigation_link_icon 
 
     ul.navigation_list 
-      each item in navigation.data.list
-        li.navigation_list_item
-          a.navigation_list_link(href=Link(item.link))=item.text
-      
+      li.navigation_list_item
+        a.navigation_list_link(href=Link('#')) Why Gasco?
+      li.navigation_list_item
+        a.navigation_list_link(href=Link('#')) Services
+      li.navigation_list_item
+        a.navigation_list_link(href=Link('#')) Meet the Team
+      li.navigation_list_item
+        a.navigation_list_link(href=Link('#')) Media
+      li.navigation_list_item
+        a.navigation_list_link(href=Link('#')) Apply
+
+
+    
