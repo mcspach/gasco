@@ -27,12 +27,12 @@ const handleLinkResolver = doc => {
 
   // Define the url depending on the document type
   if (doc.type === 'product') {
-    return '/details/' + doc.uid;
-  } else if (doc.type === 'about') {
-    return '/about';
-  } else if (doc.type === 'collections') {
-    return '/collections';
-  } else {
+  //   return '/details/' + doc.uid;
+  // } else if (doc.type === 'about') {
+  //   return '/about';
+  // } else if (doc.type === 'collections') {
+  //   return '/collections';
+  // } else {
 //   // Default to homepage
   return '/';
   }

@@ -1,0 +1,19 @@
+nav.navigation {
+  height: 100px;
+  width: 100vw;
+  background-color: blue;
+
+  .navigation_wrapper {}
+  a.navigation_link {}
+  svg.navigation_link_icon {}
+
+  ul.navigation_list {
+    list-style-type: none;
+    list-style: none;
+
+    li.navigation_list_item {
+      text-decoration: none;
+      a.navigation_list_link {} 
+    }
+  }
+}
