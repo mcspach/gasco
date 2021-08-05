@@ -1,18 +1,17 @@
 @import './reset.scss';
+@import 'https://use.typekit.net/vae5vru.css';
 @import './global/index.scss';
 @import './partials/index.scss';
 @import './pages/index.scss';
 
 html {
-    margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    font-family: 'Dunbar Text Regular', Arial, Helvetica, sans-serif;
+    color: $darkblue;
 }
