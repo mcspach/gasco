@@ -1,17 +1,25 @@
 nav.navigation {
   height: 100px;
   width: 100vw;
-  background-color: $lightblue;
+  background-color: $whiteblue;
 
-  .navigation_wrapper {}
+  .navigation_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   a.navigation_link {}
-  svg.navigation_link_icon {}
 
   ul.navigation_list {
     list-style-type: none;
     list-style: none;
 
     li.navigation_list_item {
+      color: $midblue;
+      margin-left: 30px;
+      display: inline;
       text-decoration: none;
       a.navigation_list_link {} 
     }
