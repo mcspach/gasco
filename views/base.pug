@@ -8,9 +8,9 @@ html(lang="en")
 
     base(href="/")
 
-    title Gasco Home Loans
+    title=meta.data.title
 
-    meta(name="description" content='Gasco Home Loans website.')
+    meta(name="description" content=meta.data.description)
 
     //- favicon
     link(rel="apple-touch-icon" sizes="180x180" href="/shared/apple-touch-icon.png")
@@ -26,11 +26,11 @@ html(lang="en")
     //- meta(property="og:description" content=meta.data.description)
     //- meta(property="og:image" content=meta.data.image ? meta.data.image.url : '')
 
-    //- meta(name="twitter:card" content="summary_large_image")
-    //- meta(name="twitter:title" content=meta.data.title)
-    //- meta(name="twitter:description" content=meta.data.description)
-    //- meta(name="twitter:image" content=meta.data.image ? meta.data.image.url : '')
-     //- link(rel="preconnect" href="https:fonts.gstatic.com")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=meta.data.title)
+    meta(name="twitter:description" content=meta.data.description)
+    meta(name="twitter:image" content=meta.data.image ? meta.data.image.url : '')
+    link(rel="preconnect" href="https:fonts.gstatic.com")
 
     link(rel="preconnect" href="https://www.google-analytics.com")
 
