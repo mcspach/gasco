@@ -7,25 +7,51 @@ block content
   .home 
     .home_wrapper 
       .section.section_1
-        .section_text   
-          h1 Approval is within your grasp.
-          button Become a Client 
-        img.lrg_right
-      .section.section_2
-        img.lrg_left
         .section_text 
-          h3 Why us?  
-          h1 Dont worry.
-          h1 We've got your back.
-          h4 Where banks and lenders fail,
-          h2 We get you qualified.
-          p How? We use every possible strategy and aggressively work to ensure you get into your new home as fast as possible! 
+          div  
+            h1 Approval 
+            h2 is within your grasp
+          button Become a Client 
+        .image(style='background-image:url(' + photos.data[1].url + ')' alt=photos.data[1].alt)
+      .section.section_2
+        .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
+        .section_text 
+          div
+            h3 Why us?  
+            h1 Dont worry.
+            h1 We've got your back.
+          div
+            h4 Where banks and lenders fail,
+            h2 We get you qualified.
+          div
+            p How?
+            p We use every possible strategy and aggressively work to ensure you get into your new home as fast as possible!
       .section.section_3
-        .section_text   
-          h1 lorem
-          h2 lorem
-          p lorem
-        img.lrg_right
+        .section_text.section_dark 
+          div  
+            h1 Buying a home should be fun.
+          div
+            h4 Don't let the process get in the way.
+            h2 We'll handle the hard parts.
+          div
+            p RELAX.
+            br
+            p Buying a home is something to celebrate, not to stress over.
+          div
+            h5 The keys to your new home are waiting.
+            br
+            h5 The Gasco Team is here to make the home-buying experience smooth and simple.
+            br
+            h5 Don't sit around dreaming, get the process moving.
+          button.dark Become a Client
+        .image(style='background-image:url(' + photos.data[3].url + ')' alt=photos.data[3].alt)
+      .section.section_4
+        .image(style='background-image:url(' + photos.data[4].url + ')' alt=photos.data[4].alt)
+        .section_text 
+          div  
+            h1 Our Services
+          div
+            h4 Our experiences team is happy to meet the needs of ANY customer ANY home
 
     //-     each collection, index in collections 
     //-       .collections_title_label=`${home.data.collection} ${Numbers(index)}`

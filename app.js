@@ -68,27 +68,28 @@ app.set('view engine', 'pug')
 
 const handleRequest = async api => {
   const meta = await api.getSingle('meta')
-  const navigation = await api.getSingle('navigation')
-  const preloader = await api.getSingle('preloader')
+  const logos = await api.getSingle('logos')
+  const photos = await api.getSingle('photos')
+  // const preloader = await api.getSingle('preloader')
+
+  console.log(photos)
 
   return {
+    logos,
     meta,
-    navigation,
-    preloader
+    photos
   }
 }
 
 app.get('/', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
-  const home = await api.getSingle('home')
-  const { results: collections } = await api.query(Prismic.Predicates.at('document.type', 'collection'), {
-    fetchLinks: 'product.image'
-  })
+  // const { results: collections } = await api.query(Prismic.Predicates.at('document.type', 'collection'), {
+  //   fetchLinks: 'product.image'
+  // })
 
   res.render('pages/home', {
-    ...defaults,
-    home
+    ...defaults
   })
 })
 

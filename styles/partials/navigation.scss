@@ -1,5 +1,6 @@
 nav.navigation {
-  height: 100px;
+  position: fixed;
+  height: 10vh;
   width: 100vw;
   background-color: $whiteblue;
 
@@ -10,9 +11,13 @@ nav.navigation {
     align-items: center;
     justify-content: space-around;
   }
-  a.navigation_link {}
+  a.home_link {
+    height: 100%;
+    img { height: 100%;}
+  }
 
   ul.navigation_list {
+    font-size: 1.5rem;
     list-style-type: none;
     list-style: none;
 
