@@ -5,8 +5,11 @@
 @import './pages/index.scss';
 
 html {
+    scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;
+    //convert rem to 10px
+    font-size: 62.5%;
 }
 
 body {

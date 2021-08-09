@@ -1,13 +1,14 @@
 div.preloader {
+  z-index: 10;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: white;
-  position: absolute;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  animation: 2.5s preLoader forwards;
+  animation: 2s preLoader forwards;
   div.preloader-wrapper {
     display: flex;
     flex-flow: column nowrap;
