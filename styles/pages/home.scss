@@ -1,14 +1,22 @@
 div.section {
-  height: 95vh;
+  z-index: 1;
+  height: 90vh;
   display: flex;
   flex-flow: row nowrap;
   align-content: center;
   justify-content: space-between;
+  img {height: 100%;}
   div.image {
     height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    //graphic
+    img { 
+      height: 100%;
+      position: relative; 
+      left: -275px;
+    }
   }
   div.section_text {
   width: 100%;
@@ -16,16 +24,26 @@ div.section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
+    h3,h5,p {
+      color: $midblue;
+    }
     button,div {
-      margin-left: 20px;
+      margin-left: 8%;
       max-width: 80%;
   }
   }
   div.section_dark {
-    color: $whiteblue;
+    h1,h3,h6 { color: $white;}
+    h2,h4,h5,p { color: $whiteblue;}
     background-color: $darkblue;
   }
 }
-div.section_1 h1 {
-  font-size: 6.5rem;
+div.section_1 {
+  h1 { font-size: 6.5rem;}
+}
+div.section_4 {
+  div.image {  background-position: right; }
+}
+div.section_3 {
+  div.image {  background-position: right; }
 }
