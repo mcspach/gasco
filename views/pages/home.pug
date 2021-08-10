@@ -10,11 +10,12 @@ block content
         .section_text 
           div  
             h1 Approval 
-            h2 is within your grasp
+            h2 is&nbsp;within&nbsp;your&nbsp;grasp
           button Become a Client 
-        .image(style='background-image:url(' + photos.data[1].url + ')' alt=photos.data[1].alt)
+        img(src=photos.data[1].url alt=photos.data[1].alt)
       .section.section_2
         .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
+          img(src=graphics.data[2].url alt=graphics.data[2].alt)
         .section_text 
           div
             h3 Why us?  
@@ -29,7 +30,7 @@ block content
       .section.section_3
         .section_text.section_dark 
           div  
-            h1 Buying a home should be fun.
+            h2 Buying a home <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should be fun.
           div
             h4 Don't let the process get in the way.
             h2 We'll handle the hard parts.
@@ -51,7 +52,7 @@ block content
           div  
             h1 Our Services
           div
-            h4 Our experiences team is happy to meet the needs of ANY customer ANY home
+            h4 Our experienced team is happy to meet the needs of ANY customer ANY home
 
     //-     each collection, index in collections 
     //-       .collections_title_label=`${home.data.collection} ${Numbers(index)}`

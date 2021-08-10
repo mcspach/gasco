@@ -18,3 +18,8 @@ body {
     font-family: 'Dunbar Text', Helvetica, sans-serif;
     color: $darkblue;
 }
+
+@media screen and (min-width=1700px) {}
+@media screen and (min-width=1250px) {}
+@media screen and (min-width=900px) {}
+@media screen and (min-width=500px) {}
