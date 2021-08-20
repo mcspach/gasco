@@ -1,0 +1,27 @@
+script.
+  let texts = document.querySelectorAll(".blurry");
+  const fraction = 0.5;
+  function checkScrollText() {
+
+    for(let i = 0; i < texts.length; i++) {
+
+      let text = texts[i];
+
+      let x = text.offsetLeft, y = text.offsetTop, w = text.offsetWidth, h = text.offsetHeight, r = x + w, //right
+        b = y + h, //bottom
+        visibleX, visibleY, visible;
+
+        visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+        visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+        visible = visibleX * visibleY / (w * h);
+
+        if (visible > fraction) {
+            console.log(text);
+            text.classList.add("unblur");
+            text.classList.remove("blurry");
+        }
+    }
+  }
+  window.addEventListener('scroll', checkScrollText, false);
+  window.addEventListener('resize', checkScrollText, false);
