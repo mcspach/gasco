@@ -1,7 +1,7 @@
 nav.navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 10;
   height: 10vh;
   width: 100vw;
   background-color: $whiteblue;
@@ -12,23 +12,30 @@ nav.navigation {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    a.home_link {
+      height: 90%;
+      img { height: 100%;}
+    }
   }
-  a.home_link {
-    height: 100%;
-    img { height: 100%;}
-  }
-
+  
   ul.navigation_list {
-    font-size: 1.5rem;
     list-style-type: none;
     list-style: none;
 
     li.navigation_list_item {
-      color: $midblue;
       margin-left: 30px;
       display: inline;
-      text-decoration: none;
-      a.navigation_list_link {} 
+  
+      a.navigation_list_link {
+        color: $midblue;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+    li.navigation_list_item>a:hover, li.navigation_list_item>a:focus {
+      color: $darkblue;
     }
   }
 }
+

@@ -1,6 +1,7 @@
 // Buttons
 
 button {
+  text-transform: uppercase;
   font-family: 'Dunbar Text', Helvetica, sans-serif;
   background-color: transparent;
   color: $darkblue;
@@ -13,12 +14,24 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .4s;
 }
-
 button.dark {
   color: $whiteblue;
   border-color: $whiteblue;
 }
+button:hover, button:focus {
+  transform: scale(1.04);
+  color: $midblue;
+  border-color: $midblue;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+//Text
 
 h1 {
   font-size: 5rem;
