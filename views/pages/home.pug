@@ -6,20 +6,19 @@ block variables
 block content 
   .home 
     .home_wrapper 
-      .section#section_1
+      .section#section_1(style='background-image:url(' + photos.data[1].url + ')' alt=photos.data[1].alt)
         .section_text 
+          button Become a Client
           div
-            h1 Approval 
-            h2 is&nbsp;within&nbsp;your&nbsp;grasp
-          button Become a Client 
-        img(src=photos.data[1].url alt=photos.data[1].alt)
+            h1.text_white Approval
+            h2.text_white is&nbsp;within&nbsp;your&nbsp;grasp
       .section#section_2
-        .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
+        .image(style='background-image:url(' + photos.data[9].url + ')' alt=photos.data[9].alt)
           img(src=graphics.data[2].url alt=graphics.data[2].alt)
         .section_text 
           div
             h3 Why us?  
-            h1 Dont worry.
+            h1 RELAX.
             h1 We've got your back.
           div
             h4 Where banks and lenders fail,
@@ -35,7 +34,7 @@ block content
             h4 Don't let the process get in the way.
             h2.text_light We'll handle the hard parts.
           div
-            p RELAX.
+            p Don't worry.
             br
             p Buying a home is something to celebrate, not to stress over.
           div
@@ -47,7 +46,7 @@ block content
           button.dark Become a Client
         .image(style='background-image:url(' + photos.data[3].url + ')' alt=photos.data[3].alt)
       .section#services
-        .image(style='background-image:url(' + photos.data[4].url + ')' alt=photos.data[4].alt)
+        .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
           img(src=graphics.data[3].url alt=graphics.data[3].alt)
         .section_text 
           div 
@@ -76,8 +75,6 @@ block content
             h2.text_midblue Ready?
             p Our <strong>MOBILE APP</strong> can kickstart your pre-approval process in just a few minutes.
             button Get Approved
-          .details_section_2 
-            p We are a proud partner of Resban.
 
 
 

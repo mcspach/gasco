@@ -34,15 +34,38 @@ h2,h4,h5,p { color: $whiteblue;}
 background-color: $darkblue;
 }
 }
-div#section_1 {
-  h1 { font-size: 6.5rem;}
+div.section#section_1 {
+  height: 90vh;
+  padding: 2rem;
+  flex-flow: row nowrap;
+  align-content: flex-end;
+  box-sizing: border-box;
+  background-size: cover;
+  background-attachment: fixed;
+  button { margin-left: 2%; background-color: white;}
+  div.section_text {
+    max-width: 98%;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    div {
+      display: flex;
+      flex-flow: column nowrap; 
+      text-align: right;
+      text-shadow: -.2rem -.2rem 0 $midblue, -.4rem -.4rem 0 $darkblue;
+      }
+    h1 { font-size: 8rem;}
+    h2 { font-size: 3.8rem;}
+
+  }
 }
 div#section_2 {
   div.image {
+    background-position: right;
     img {
       height: 100%;
       position: relative; 
-      left: -290px;
+      left: -300px;
     }}
 }
 div#section_3 {
@@ -51,7 +74,6 @@ div#section_3 {
 }
 div#services {
   div.image { 
-    background-position: right; 
     img { 
       height: 50vh;
       width: 50%;
@@ -73,12 +95,15 @@ div#services {
 div.bg-blue {
   transform: translateY(2px);
   background-color: $lightblue;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 div.section#clip_container {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  margin: 0% auto;
-  height: 80vh;
-  width: 90vw;
+  margin: 0 auto;
+  height: 70vh;
+  width: 70vw;
   overflow: hidden;
   div#home_details {
     background-size: cover;
@@ -91,9 +116,8 @@ div.section#clip_container {
   }
 }
 div.details_section_text {
-  margin-left: 2%;
   padding: 2%;
-  transform: translateY(-50vh);
+  transform: translateY(-45vh);
   height: 30vh;
   width: 25vw;
   background-color: rgba(255,255,255,.7);
