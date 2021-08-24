@@ -23,6 +23,12 @@ body {
 
 //media queries
 // 1700
-// 1250
 // 900
-// 500
+@media screen and (max-width: 900px) {
+    html { font-size: 45%; }
+    //logo smaller
+    //
+}
+@media screen and (max-width: 550px) {
+    html { font-size: 40%; }
+}

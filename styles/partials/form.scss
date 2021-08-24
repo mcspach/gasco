@@ -1,0 +1,51 @@
+div#form_full {
+  display: none;
+  transition: .2s;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  .form_wrapper {
+    background-size: cover;
+    background-position: center;
+    margin: 11vh auto;
+    width: 90%;
+    height: 80%;
+    border: 2px solid white;
+    form {
+      text-align: center;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 2% auto;
+      height: 90%;
+      width: 90%;
+      background-color: rgba(0, 0, 0, .5);
+      color: white;
+      button#close {
+        position: fixed;
+        top: 12vh;
+        left: 2vw;
+      }
+      input, textarea {
+        padding: 1rem;
+        font-family: 'Dunbar Text', Helvetica, sans-serif;
+        border: 2px solid $darkblue;
+        width: 100%;
+        max-width: 350px;
+        margin-right: 1px;
+      }
+      div>input {
+        width: 29%;
+        max-width: 110px;
+      }
+      button#call {
+        margin: 1rem auto;
+        width: 100%;
+      }
+    }
+  }
+}
+  

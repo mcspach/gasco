@@ -7,7 +7,7 @@ display: flex;
 flex-flow: row nowrap;
 align-content: center;
 justify-content: space-between;
-img {height: 100%;}
+img { height: 100%; }
 div.image {
 height: 100%;
 width: 100%;
@@ -36,15 +36,15 @@ background-color: $darkblue;
 }
 div.section#section_1 {
   height: 90vh;
-  padding: 2rem;
+  padding: 3rem;
   flex-flow: row nowrap;
   align-content: flex-end;
   box-sizing: border-box;
   background-size: cover;
   background-attachment: fixed;
-  button { margin-left: 2%; background-color: white;}
+  button { margin-left: 2%;}
   div.section_text {
-    max-width: 98%;
+    max-width: 97%;
     justify-content: space-between;
     align-items: flex-end;
     flex-flow: row nowrap;
@@ -52,20 +52,19 @@ div.section#section_1 {
       display: flex;
       flex-flow: column nowrap; 
       text-align: right;
-      text-shadow: -.2rem -.2rem 0 $midblue, -.4rem -.4rem 0 $darkblue;
+      text-shadow: -.3rem -.3rem 0 $midblue, -.6rem -.6rem 0 $darkblue;
       }
-    h1 { font-size: 8rem;}
-    h2 { font-size: 3.8rem;}
-
+    h1 { font-size: 10rem;}
+    h2 { font-size: 4.7rem;}
   }
 }
-div#section_2 {
+div#why_gasco {
   div.image {
     background-position: right;
     img {
-      height: 100%;
+      height: 50%;
       position: relative; 
-      left: -300px;
+      left: 0;
     }}
 }
 div#section_3 {
@@ -93,39 +92,78 @@ div#services {
   }
 }
 div.bg-blue {
-  transform: translateY(2px);
   background-color: $lightblue;
+  height: 90vh;
+  a {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100vw;
+  height: 90vh;
   display: flex;
-  align-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
   justify-content: center;
-}
-div.section#clip_container {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  margin: 0 auto;
-  height: 70vh;
-  width: 70vw;
-  overflow: hidden;
-  div#home_details {
-    background-size: cover;
-    width: 90vw;
-    height: 100%;
-    transition: .4s;
   }
-  div#home_details:hover, div#home_details:focus {
-    transform: scale(1.1);
+  div#clip_container {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    height: 70vh;
+    width: 80vw;
+    div#home_details {
+      background-size: cover;
+      background-position-y: center;
+      height: 100%;
+      transition: .4s;
+    }
+    div#home_details:hover, div#home_details:focus {
+      transform: scale(1.1);
+    }
+  }
+  div.details_section_text {
+    z-index: 3;
+    transform: translateX(11rem);
+    padding: 2%;
+    max-height: 50vh;
+    min-height: 25rem;
+    width: 25rem;
+    background-color: rgba(255,255,255,.7);
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border: .2rem solid $darkblue;
+    button {
+      margin: 0 auto;
+    }
   }
 }
-div.details_section_text {
-  padding: 2%;
-  transform: translateY(-45vh);
-  height: 30vh;
-  width: 25vw;
-  background-color: rgba(255,255,255,.7);
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
-  justify-content: space-evenly;
-  border: .2rem solid $darkblue;
+
+@media screen and (max-width: 900px) {
+  div.section {
+    flex-flow: column nowrap;
+  }
+  div.section#section_1 {
+    background-position: center;
+    padding-bottom: 10%;
+    div.section_text {
+      flex-flow: column nowrap;
+    }
+  }
+  div#services {
+    div.image { 
+      height: 30vh;
+      background-position: center top;
+      img { 
+        height: 25vh;
+        width: 50%;
+        padding-top: 5vh;
+        padding-left: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  
 }
 
 

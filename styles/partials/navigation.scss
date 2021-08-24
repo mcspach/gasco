@@ -39,3 +39,14 @@ nav.navigation {
   }
 }
 
+@media screen and (max-width: 900px) {
+  nav.navigation div.navigation_wrapper {
+    a.home_link {
+      height: 50%;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+
+}
+

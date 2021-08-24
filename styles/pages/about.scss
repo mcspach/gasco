@@ -1,0 +1,58 @@
+div.section.about_banner {
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
+  align-items: flex-end;
+  justify-content: space-between;
+  h2 {
+    font-size: 2.8rem;
+    margin: 5%;
+  }
+}
+
+div.section.video {
+  div.video_wrapper {
+    background-color: black;
+    margin: auto;
+    height: 70vh;
+    aspect-ratio: 16/9;
+  }
+}
+
+div.section.team {
+  text-align: center;
+}
+
+div.section.maps {
+  display: block;
+  padding: 2%;
+  text-align: center;
+  background-color: $darkblue;
+  height: 80vh;
+  color: white;
+  h2 { transform: translateY(14vh);}
+  .maps_wrapper {
+    height: 100%;
+    margin: 0 auto;
+    background-color: $darkblue;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    .map {
+      transition: .4s;
+      h1 {
+        transform: translateY(20vh);
+        margin: 3%;
+      }
+      img {
+        width: 25vw;
+        height: 25vw;
+      }
+    }
+    .map:hover {
+      transform: scale(1.1);
+    }
+  }
+}
