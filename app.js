@@ -71,24 +71,23 @@ const handleRequest = async api => {
   const logos = await api.getSingle('logos')
   const photos = await api.getSingle('photos')
   const graphics = await api.getSingle('graphics')
+  const team = await api.getSingle('team')
   // const preloader = await api.getSingle('preloader')
 
-  console.log(photos)
+  console.log(team)
 
   return {
     graphics,
     logos,
     meta,
-    photos
+    photos,
+    team
   }
 }
 
 app.get('/', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
-  // const { results: collections } = await api.query(Prismic.Predicates.at('document.type', 'collection'), {
-  //   fetchLinks: 'product.image'
-  // })
 
   res.render('pages/home', {
     ...defaults
@@ -98,42 +97,39 @@ app.get('/', async (req, res) => {
 app.get('/about', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
-  const about = await api.getSingle('about')
 
   res.render('pages/about', {
-    ...defaults,
-    about
+    ...defaults
   })
 })
 
-app.get('/detail/:uid', async (req, res) => {
-  const api = await initApi(req)
-  const defaults = await handleRequest(api)
-  const product = await api.getByUID('product', req.params.uid, {
-    fetchLinks: 'collection.title'
-  })
-  res.render('pages/detail', {
-    ...defaults,
-    product
-  })
-}) 
+// app.get('/detail/:uid', async (req, res) => {
+//   const api = await initApi(req)
+//   const defaults = await handleRequest(api)
+//   const product = await api.getByUID('product', req.params.uid, {
+//     fetchLinks: 'collection.title'
+//   })
+//   res.render('pages/detail', {
+//     ...defaults,
+//     product
+//   })
+// }) 
 
-app.get('/collections', async (req, res) => {
-  const api = await initApi(req)
-  const defaults = await handleRequest(api)
-  const home = await api.getSingle('home')
-  const { results: collections } = await api.query(Prismic.Predicates.at('document.type', 'collection'), {
-    fetchLinks: 'product.image'
-  })
+// app.get('/collections', async (req, res) => {
+//   const api = await initApi(req)
+//   const defaults = await handleRequest(api)
+//   const home = await api.getSingle('home')
+//   const { results: collections } = await api.query(Prismic.Predicates.at('document.type', 'collection'), {
+//     fetchLinks: 'product.image'
+//   })
 
-  res.render('pages/collections', {
-    ...defaults,
-    collections,
-    home
-  })
-})
-
-
+//   res.render('pages/collections', {
+//     ...defaults,
+//     collections,
+//     home
+//   })
+// })
+ 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })

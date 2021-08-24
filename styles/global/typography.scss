@@ -1,15 +1,16 @@
 // Buttons
 
 button {
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Dunbar Text', Helvetica, sans-serif;
-  background-color: transparent;
+  background-color: white;
   color: $darkblue;
   border: 2px solid $darkblue;
   margin: 10px;
-  height: 4rem;
-  width: 20rem;
-  border-radius: 2rem;
+  height: 5rem;
+  width: 25rem;
+  border-radius: 2.5rem;
   //center text
   display: flex;
   align-items: center;
@@ -17,13 +18,18 @@ button {
   transition: .4s;
 }
 button.dark {
-  color: $lightblue;
-  border-color: $lightblue;
+  background-color: $darkblue;
+  color: white;
+  border-color: white;
 }
 button:hover, button:focus {
   transform: scale(1.04);
   color: $midblue;
   border-color: $midblue;
+}
+button.dark:hover, button.dark:focus {
+  color: $whiteblue;
+  border-color: $whiteblue;
 }
 
 a {
@@ -75,6 +81,13 @@ p {
 }
 .text_dark {
   color: $darkblue !important;
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+@media screen and (max-width: 550px) {
+  
 }
 
 

@@ -9,7 +9,6 @@ html(lang="en")
     base(href="/")
 
     title=meta.data.title
-
     meta(name="description" content=meta.data.description)
 
     //- favicon
@@ -40,10 +39,10 @@ html(lang="en")
   body
     include ./partials/preloader
     include ./partials/navigation
+    include ./partials/form
     
     .content#content(data-template=template)
       block content
 
     include ./partials/footer
-
-    include animations
+    include show_hide
