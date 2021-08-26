@@ -71,17 +71,16 @@ const handleRequest = async api => {
   const logos = await api.getSingle('logos')
   const photos = await api.getSingle('photos')
   const graphics = await api.getSingle('graphics')
-  const team = await api.getSingle('team')
+  const about = await api.getSingle('about')
   // const preloader = await api.getSingle('preloader')
 
-  console.log(team)
 
   return {
+    about,
     graphics,
     logos,
     meta,
-    photos,
-    team
+    photos
   }
 }
 
