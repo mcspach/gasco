@@ -28,6 +28,10 @@ div#form_full {
         position: fixed;
         top: 12vh;
         left: 2vw;
+        @include media('<medium') {
+          top: 10vh;
+          left: 1vh;
+        }
       }
       input, textarea {
         padding: 1rem;

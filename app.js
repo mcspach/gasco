@@ -21,6 +21,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(methodOverride())
 app.use(errorHandler())
+app.use(express.static(path.join(__dirname, 'public')))
 
 // Link Resolver
 const handleLinkResolver = doc => {
@@ -71,12 +72,9 @@ const handleRequest = async api => {
   const logos = await api.getSingle('logos')
   const photos = await api.getSingle('photos')
   const graphics = await api.getSingle('graphics')
-  const about = await api.getSingle('about')
   // const preloader = await api.getSingle('preloader')
 
-
   return {
-    about,
     graphics,
     logos,
     meta,
@@ -96,9 +94,24 @@ app.get('/', async (req, res) => {
 app.get('/about', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
+  const about = await api.getSingle('about')
 
   res.render('pages/about', {
-    ...defaults
+    ...defaults,
+    about
+  })
+})
+
+app.get('/media', async (req, res) => {
+  const api = await initApi(req)
+  const defaults = await handleRequest(api)
+  const media = await api.getSingle('media')
+
+  console.log(media)
+
+  res.render('pages/media', {
+    ...defaults,
+    media
   })
 })
 
