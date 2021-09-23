@@ -1,3 +1,4 @@
+@import 'slick-gallery.css';
 @import './reset.scss';
 @import 'https://use.typekit.net/vae5vru.css';
 @import './global/index.scss';
@@ -24,11 +25,11 @@ body {
 //media queries
 // 1700
 // 900
-@media screen and (max-width: 900px) {
-    html { font-size: 45%; }
+@include media('<medium') {
+    html { font-size: 52%}
     //logo smaller
     //
 }
-@media screen and (max-width: 550px) {
+@include media('<small') {
     html { font-size: 40%; }
 }

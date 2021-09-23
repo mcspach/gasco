@@ -1,0 +1,18 @@
+extends ../base.pug
+
+block variables 
+  - var template = 'media'
+
+block content 
+  .media
+    .media_wrapper
+      .media_section(style="transform: translateY(10vh);width: 100vw;min-height: 90vh;text-align: center;display: flex;flex-flow: column nowrap;align-items: center;justify-content: space-evenly;")
+          h1 Videos
+          iframe(title="vimeo-player" src="https://player.vimeo.com/video/528546642?h=82f9576a5f" width="640" height="360" frameborder="0" allowfullscreen)
+        
+      .media_section(style="transform: translateY(10vh);width: 100vw;min-height: 90vh;text-align: center;display: flex;flex-flow: column nowrap;align-items: center;justify-content: space-evenly;")
+        h1 Photos
+        img(src=photos.data[4].url alt=photos.data[4].alt style="height: 400px;")
+        each image in media.data.photo_gallery
+          .photo_slider 
+            img(src=image.url alt=image.alt)

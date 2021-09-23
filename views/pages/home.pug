@@ -14,7 +14,7 @@ block content
             h2.text_white is&nbsp;within&nbsp;your&nbsp;grasp
       .section#why_gasco
         .image(style='background-image:url(' + photos.data[9].url + ')' alt=photos.data[9].alt)
-          img(src=graphics.data[8].url alt=graphics.data[8].alt)
+          img
         .section_text 
           div
             h3 Why us?  
@@ -26,9 +26,9 @@ block content
           div
             p How?
             p We use every possible strategy and aggressively work to ensure you get into your new home as fast as possible!
-          div
+          div.cta
             h2 CANT WAIT?
-            button#call
+            button
               a(href="tel:+1-833-427-2644") +1-833-GASCOGG
       .section#section_3
         .section_text.section_dark 
@@ -36,42 +36,43 @@ block content
             h1 Buying a home <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should be fun.
           div
             h4 Don't let the process get in the way.
+            hr
             h2.text_light We'll handle the hard parts.
-          div
+          div.no_mobile
             p Don't worry.
             br
             p Buying a home is something to celebrate, not to stress over.
           div
-            h5 The keys to your new home are waiting.
-            hr
+            h4 The keys to your new home are waiting.
+            br
             h5.text_white The Gasco Team is here to make the home-buying experience smooth and simple.
-            hr
-            h5 Don't sit around dreaming, get the process moving.
+            br
+            h4#services Don't sit around dreaming, get the process moving.
           button.dark(href='#form' onclick="div_show()") Become a Client
         .image(style='background-image:url(' + photos.data[3].url + ')' alt=photos.data[3].alt)
-      .section#services
+      .section.services
         .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
           img(src=graphics.data[3].url alt=graphics.data[3].alt)
         .section_text 
           div 
             h1 Our Services 
             hr
-            h6 Our experienced team is happy to help you out.
-            h4 ANY BUYER. ANY HOME.
+            h4 Our experienced team is happy to help you out.
+            h5 Any buyer. Any home.
           div.services_list
             div(style='background-image:url(' + graphics.data[7].url + ')' alt=graphics.data[7].alt)
-              h5.text_dark Service 
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore sint ex quod optio quae reprehenderit cumque! Doloribus optio, voluptas eligendi qui, consequatur illum a dolorem esse provident tempore quo.
+              h5.text_dark In-House Appraisals 
+              p Our dedicated in-house appraisal department help expedite your loan transactions with experienced appraisers you can trust.
             div(style='background-image:url(' + graphics.data[7].url + ')' alt=graphics.data[7].alt)
-              h5.text_dark Service 
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam reiciendis itaque magnam maxime praesentium. Natus rerum animi provident delectus impedit? Vitae est facilis atque saepe qui natus, ducimus nostrum exercitationem!
+              h5.text_dark E-Disclosures
+              p Don't let our competitors leave you waiting for days to finalize. Resban and the Gasco Team can provide an E-Disclosure option, greatly minimizing waiting periods and getting you approved faster.
             div(style='background-image:url(' + graphics.data[7].url + ')' alt=graphics.data[7].alt)
-              h5.text_dark Service 
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore sint ex quod optio quae reprehenderit cumque! Doloribus optio, voluptas eligendi qui, consequatur illum a dolorem esse provident tempore quo.
+              h5.text_dark No Overlays 
+              p Have decent credit? We can provide ZERO overlays for qualifying home-buyers.Elliminating investor overlays will get you a better deal and give our team the final decision on your loan approval.
             div(style='background-image:url(' + graphics.data[7].url + ')' alt=graphics.data[7].alt) 
               h6 The list goes on... 
               button Learn More 
-      .section.bg-blue
+      .section.bg_blue
         a(href="https://pro.bancorp.com/dr/c/com8o")
           .details_section_text
             h2.text_midblue Ready?

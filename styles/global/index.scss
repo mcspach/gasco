@@ -1,2 +1,15 @@
+@import 'breakpoints.scss';
 @import 'variables.scss';
 @import 'typography.scss';
+
+
+@include media('>medium') {
+    .no_desktop { display: none; }
+}
+
+@include media('<medium') {
+  .no_mobile { display:none; }
+}
+
+
+

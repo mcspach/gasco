@@ -6,27 +6,36 @@ block variables
 block content 
   .about
     .about_wrapper
-      .section.about_banner(style='background-image: url(' + photos.data[8].url + ')' alt=photos.data[8].alt)
+      .section.about_banner(style='background-image: url(' + about.data[1].url + ')' alt=about.data[1].alt)
         h2 Working creatively...
         h2 to get you approved. 
-      .section.video
-        .video_wrapper
+
       .section.team
-        h4 This will display the team with blurbs or contact info, etc. 
-        //- each member in staff
-        //- figure with caption
+        img(src=about.data[4].url alt=about.data[4].alt) 
+        button.team(href='https://www.bancorpretail.com/thegascoteam/team-2/') Contact Info
+
       .section.maps
         h2 Gasco Team Locations:
         .maps_wrapper
           .map
             a(href="https://bit.ly/3y8YbVB") 
               h1 Fresno Office 
-              img(src=photos.data[11].url alt=photos.data[11].url)
+              img(src=about.data[2].url alt=about.data[2].alt)
           .map
             a(href="https://bit.ly/3sFOP2v")
               h1 Porterville Office
-              img(src=photos.data[12].url alt=photos.data[12].url)
-      .section.bg-blue
+              img(src=about.data[3].url alt=about.data[3].alt)
+
+      .section.quote
+        div
+          img(src=graphics.data[10].url alt=graphics.data[10].alt)
+        .quote_text
+          p "It was my pleasure working with Greg. He helped my family and I purchase our very first home... He has been a great, hard-working man, always figuring out a way to get me approved and fulfil all my requests. Greg also has a great supporting team. I really appreciated the work they did."
+          h4(style='text-align: right; font-style: italic;') - Proud Home Owner
+        div
+          img(src=graphics.data[9].url alt=graphics.data[9].alt)
+
+      .section.bg_blue
         a(href="https://pro.bancorp.com/dr/c/com8o")
           .details_section_text
             h2.text_midblue Ready?

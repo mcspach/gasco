@@ -21,6 +21,17 @@ div.section.video {
 
 div.section.team {
   text-align: center;
+  flex-flow: column nowrap;
+  height: fit-content;
+  align-items: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    width: 60%;
+    margin: 5%;
+  }
 }
 
 div.section.maps {
@@ -28,11 +39,11 @@ div.section.maps {
   padding: 2%;
   text-align: center;
   background-color: $darkblue;
-  height: 80vh;
+  height: 90vh;
   color: white;
   h2 { transform: translateY(14vh);}
   .maps_wrapper {
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     background-color: $darkblue;
     display: flex;
@@ -54,5 +65,36 @@ div.section.maps {
     .map:hover {
       transform: scale(1.1);
     }
+  }
+  @include media('<medium') {
+    max-height: 55vh; 
+  }
+  @include media('<=small') {
+    max-height: 70vh;
+    h2 { transform: translateY(7vh);} 
+    .maps_wrapper {
+      flex-flow: column nowrap;
+      h1 { transform: translateY(16vh);}
+    }
+  }
+}
+
+div.section.quote {
+  align-items: center;
+  justify-content: space-around;
+  margin: 1%;
+  height: fit-content;
+  max-height: 40vh;
+  img {
+    max-width: 25vw;
+    height: auto;
+  }
+  div.quote_text {
+    max-width: 60%;
+    padding: 10px;
+    border-right: 4px solid $darkblue;
+  }
+  @include media('<medium') {
+    flex-flow: row wrap;
   }
 }
