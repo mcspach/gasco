@@ -25,9 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // Link Resolver
 const handleLinkResolver = doc => {
-
   // Define the url depending on the document type
-  if (doc.type === 'product') {
   //   return '/details/' + doc.uid;
   // } else if (doc.type === 'about') {
   //   return '/about';
@@ -36,7 +34,6 @@ const handleLinkResolver = doc => {
   // } else {
 //   // Default to homepage
   return '/';
-  }
 }
 
 // Initialize the prismic.io api
@@ -106,8 +103,6 @@ app.get('/media', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
   const media = await api.getSingle('media')
-
-  console.log(media)
 
   res.render('pages/media', {
     ...defaults,

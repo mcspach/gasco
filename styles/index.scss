@@ -1,10 +1,8 @@
-@import 'slick-gallery.css';
 @import './reset.scss';
 @import 'https://use.typekit.net/vae5vru.css';
 @import './global/index.scss';
 @import './partials/index.scss';
 @import './pages/index.scss';
-@import './global/animations.scss';
 
 html {
     scroll-behavior: smooth;
@@ -33,3 +31,4 @@ body {
 @include media('<small') {
     html { font-size: 40%; }
 }
+

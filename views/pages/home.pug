@@ -10,16 +10,16 @@ block content
         .section_text 
           button(href='#form' onclick="div_show()") Become a Client
           div
-            h1.text_white Approval
-            h2.text_white is&nbsp;within&nbsp;your&nbsp;grasp
+            h1.text_white.blurry Approval
+            h2.text_white.blurry is&nbsp;within&nbsp;your&nbsp;grasp
       .section#why_gasco
         .image(style='background-image:url(' + photos.data[9].url + ')' alt=photos.data[9].alt)
           img
         .section_text 
           div
             h3 Why us?  
-            h1 RELAX.
-            h1 We've got your back.
+            h1.blurry RELAX.
+            h1.blurry We've got your back.
           div
             h4 Where banks and lenders fail,
             h2 We get you qualified.
@@ -27,12 +27,12 @@ block content
             p How?
             p We use every possible strategy and aggressively work to ensure you get into your new home as fast as possible!
           div.cta
-            h2 CANT WAIT?
+            h2.blurry CANT WAIT?
             button
               a(href="tel:+1-833-427-2644") +1-833-GASCOGG
       .section#section_3
         .section_text.section_dark 
-          div  
+          div.blurry  
             h1 Buying a home <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should be fun.
           div
             h4 Don't let the process get in the way.
@@ -47,15 +47,15 @@ block content
             br
             h5.text_white The Gasco Team is here to make the home-buying experience smooth and simple.
             br
-            h4#services Don't sit around dreaming, get the process moving.
+            h4 Don't sit around dreaming, get the process moving.
           button.dark(href='#form' onclick="div_show()") Become a Client
         .image(style='background-image:url(' + photos.data[3].url + ')' alt=photos.data[3].alt)
-      .section.services
+      .section.services#services
         .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
           img(src=graphics.data[3].url alt=graphics.data[3].alt)
         .section_text 
           div 
-            h1 Our Services 
+            h1.blurry Our Services 
             hr
             h4 Our experienced team is happy to help you out.
             h5 Any buyer. Any home.
@@ -75,11 +75,11 @@ block content
       .section.bg_blue
         a(href="https://pro.bancorp.com/dr/c/com8o")
           .details_section_text
-            h2.text_midblue Ready?
+            h2.text_midblue.blurry Ready?
             p Our <strong>MOBILE APP</strong> can kickstart your pre-approval process in just a few minutes.
             button Get Approved
-          #clip_container
-            #home_details(style='background-image:url(' + photos.data[7].url +')' alt=photos.data[7].alt)
+          #clip_container.no_mobile
+            #home_details.blurry(style='background-image:url(' + photos.data[7].url +')' alt=photos.data[7].alt)
           
 
 
