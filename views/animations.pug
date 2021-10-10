@@ -18,6 +18,6 @@ script.
     })
   }
 
-  window.addEventListener('pageshow', checkScrollThing, false);
   window.addEventListener('scroll', checkScrollThing, false);
   window.addEventListener('resize', checkScrollThing, false);
+  window.addEventListener('pageshow', setTimeout(checkScrollThing, 1900), false);
