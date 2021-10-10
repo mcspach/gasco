@@ -1,13 +1,18 @@
+.blurry {
+  filter: blur(2rem);
+  transform: translateX(2rem);
+}
+.unblur {
+  animation: unblur 1.5s ease-out forwards;
+}
 
-  // .unblur {
-  //   filter: blur(0);
-  //   transform: translateY(0);
-  //   // animation: unblur 2s linear 0s forwards;
-  // }
-  
-  // @keyframes unblur {
-  //   to { 
-  //     filter: blur(0) !important;
-  //     transform: translateY(0) !important;
-  //   }
-  // }
+@keyframes unblur {
+  from {
+    filter: blur(2rem);
+    transform: translateX(50px);
+  }
+  to { 
+    filter: blur(0);
+    transform: translateX(0px);
+  }
+}
