@@ -7,6 +7,10 @@ div.media_section {
   align-items: center;
   transform: translateY(10vh);
   justify-content: space-evenly;
+
+  iframe {
+    max-width: 98vw;
+  }
 }
 
 div.photo_gallery {
