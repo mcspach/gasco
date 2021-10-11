@@ -7,7 +7,7 @@ nav.navigation {
   background-color: $whiteblue;
 
   .navigation_wrapper {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     align-items: center;
@@ -16,15 +16,15 @@ nav.navigation {
       height: 90%;
       img { height: 100%;}
     }
-    @include media('<medium') {
+    @include media('<=medium') {
       a.home_link {
         height: 50%;
       }
     }
-    @include media('<small') {
+    @include media('<=small') {
       flex-flow: column-reverse nowrap;
       ul.navigation_list li.navigation_list_item {
-        margin: 0 7px;
+        margin: 0 .7rem;
       }
     }
   }
