@@ -28,9 +28,9 @@ div#form_full {
         position: fixed;
         top: 12vh;
         left: 2vw;
-        @include media('<medium') {
-          top: 10vh;
-          left: 1vh;
+        @media screen and (max-width: $medium)  {
+          top: 2vh;
+          left: 0;
         }
       }
       input, textarea {

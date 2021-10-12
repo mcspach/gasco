@@ -23,12 +23,12 @@ body {
 //media queries
 // 1700
 // 900
-@include media('<medium') {
+@media screen and (max-width: $medium) {
     html { font-size: 52%}
     //logo smaller
     //
 }
-@include media('<small') {
+@media screen and (max-width: $small)  {
     html { font-size: 40%; }
 }
 

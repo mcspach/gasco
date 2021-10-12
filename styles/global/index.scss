@@ -1,14 +1,14 @@
-@import 'breakpoints.scss';
+// @import 'breakpoints.scss';
 @import 'variables.scss';
 @import 'typography.scss';
 @import 'animations.scss';
 
 
-@include media('>medium') {
+@media screen and (max-width: $medium)  {
     .no_desktop { display: none; }
 }
 
-@include media('<medium') {
+@media screen and (min-width: $medium) {
   .no_mobile { display:none; }
 }
 

@@ -83,12 +83,8 @@ p {
   color: $darkblue !important;
 }
 
-@media screen and (max-width: 900px) {
-  
-}
-@media screen and (max-width: 550px) {
-  
-}
+@media screen and (max-width: $medium) {}
+@media screen and (max-width: $small) {}
 
 
 // Fonts added:
