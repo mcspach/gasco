@@ -141,7 +141,7 @@ div.bg_blue {
   }
 }
 
-@include media('<=medium') {
+@media screen and (max-width: $medium) {
   div.section {
     flex-flow: column nowrap;
   }
