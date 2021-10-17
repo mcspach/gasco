@@ -16,12 +16,12 @@ nav.navigation {
       height: 90%;
       img { height: 100%;}
     }
-    @media screen and (max-width: $medium) {
+    @media all and (max-width: $medium) {
       a.home_link {
         height: 50%;
       }
     }
-    @media screen and (max-width: $small) {
+    @media all and (max-width: $small) {
       flex-flow: column-reverse nowrap;
       ul.navigation_list li.navigation_list_item {
         margin: 0 .7rem;

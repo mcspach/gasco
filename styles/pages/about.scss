@@ -58,10 +58,10 @@ div.section.maps {
       text-shadow: -.5rem -.5rem 0 $midblue;
     }
   }
-  @media screen and (max-width: $medium)  {
+  @media all and (max-width: $medium)  {
     max-height: 55vh; 
   }
-  @media screen and (max-width: $small)  {
+  @media all and (max-width: $small)  {
     max-height: 70vh;
     h2 { transform: translateY(7vh);} 
     .maps_wrapper {
@@ -86,7 +86,7 @@ div.section.quote {
     padding: 10px;
     border-right: 4px solid $darkblue;
   }
-  @media screen and (max-width: $medium) {
+  @media all and (max-width: $medium) {
     flex-flow: row wrap;
   }
 }

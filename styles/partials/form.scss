@@ -28,7 +28,7 @@ div#form_full {
         position: fixed;
         top: 12vh;
         left: 2vw;
-        @media screen and (max-width: $medium)  {
+        @media all and (max-width: $medium)  {
           top: 2vh;
           left: 0;
         }
