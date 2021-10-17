@@ -4,11 +4,11 @@
 @import 'animations.scss';
 
 
-@media screen and (max-width: $medium)  {
+@media all and (max-width: $medium)  {
     .no_desktop { display: none; }
 }
 
-@media screen and (min-width: $medium) {
+@media all and (min-width: $medium) {
   .no_mobile { display:none; }
 }
 

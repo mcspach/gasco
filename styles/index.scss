@@ -4,6 +4,11 @@
 @import './partials/index.scss';
 @import './pages/index.scss';
 
+@viewport {
+    width: device-width;
+    zoom:1;
+ }
+
 html {
     scroll-behavior: smooth;
     width: 100vw;
@@ -23,12 +28,12 @@ body {
 //media queries
 // 1700
 // 900
-@media screen and (max-width: $medium) {
+@media all and (max-width: $medium) {
     html { font-size: 52%}
     //logo smaller
     //
 }
-@media screen and (max-width: $small)  {
+@media all and (max-width: $small)  {
     html { font-size: 40%; }
 }
 
