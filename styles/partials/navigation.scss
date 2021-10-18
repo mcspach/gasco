@@ -14,7 +14,10 @@ nav.navigation {
     justify-content: space-around;
     a.home_link {
       height: 90%;
-      img { height: 100%;}
+      img { 
+        height: 100%;
+        width: auto;
+      }
     }
     @media all and (max-width: $medium) {
       a.home_link {
