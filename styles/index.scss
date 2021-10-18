@@ -27,12 +27,11 @@ body {
 }
 
 //media queries
-// 1700
+// 550
 // 900
+// 1550
 @media all and (max-width: $medium) {
     html { font-size: 52%}
-    //logo smaller
-    //
 }
 @media all and (max-width: $small)  {
     html { font-size: 40%; }
