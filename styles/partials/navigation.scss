@@ -14,20 +14,18 @@ nav.navigation {
     justify-content: space-around;
     a.home_link {
       height: 90%;
-      img { 
-        height: 100%;
-        width: auto;
+      img { height: 100%;
       }
     }
     @media all and (max-width: $medium) {
       a.home_link {
-        height: 50%;
+        height: 32px;
       }
     }
     @media all and (max-width: $small) {
       flex-flow: column-reverse nowrap;
       ul.navigation_list li.navigation_list_item {
-        margin: 0 .7rem;
+        margin: 0 .6rem;
       }
     }
   }
