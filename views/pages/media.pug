@@ -7,7 +7,7 @@ block content
   .media
     .media_wrapper
       .media_section
-          h1.blurry Videos
+          h1.blurry#fadeIn Videos
           iframe(title="vimeo-player" src="https://player.vimeo.com/video/600487955?h=7223c68293" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture")
             a(href="https://vimeo.com/600487955") Greg Gasco Home Loans | Liz Aguilar
             p from
@@ -17,6 +17,8 @@ block content
         
       .media_section
         h1.blurry Other Media
+        p [ Scroll right for more... ]
         .photo_gallery
           each i in media.data.photo_gallery
             img(src=i.image.url alt=i.image.alt)
+        

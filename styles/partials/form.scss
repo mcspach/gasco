@@ -41,15 +41,24 @@ div#form_full {
         max-width: 350px;
         margin-right: 1px;
       }
+      @media all and (max-width: $small) { 
+        input, textarea { width: unset; font-size: 29%;}
+      }
       div>input {
-        width: 29%;
+        width: 27%;
         max-width: 110px;
+      }
+      @media all and (max-width: $small) { 
+        div>input { display:block; width: unset; }
       }
       button#call {
         margin: 1rem auto;
         width: 100%;
       }
     }
+  }
+  @media all and (max-width: $small)  {
+    h1 { font-size: 3rem; }
   }
 }
   
