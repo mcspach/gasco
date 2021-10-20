@@ -12,12 +12,13 @@ script.
       //- console.log(thingBottom);
 
       if (thingTop < vH) {
+        console.log(thingTop);
         thing.classList.add("unblur");
         thing.classList.remove("blurry");
       }
     })
   }
 
-  window.addEventListener('scroll', checkScrollThing, false);
+  document.getElementById('body').addEventListener('scroll', checkScrollThing, false);
   window.addEventListener('resize', checkScrollThing, false);
-  window.addEventListener('onload', setTimeout(checkScrollThing, 1900), false);
+  document.getElementById('fadeIn').addEventListener('onload', setTimeout(checkScrollThing, 1900), false)
