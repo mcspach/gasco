@@ -84,7 +84,16 @@ p {
 }
 
 @media all and (max-width: $medium) {}
-@media all and (max-width: $small) {}
+@media all and (max-width: $small) {
+  button {
+    font-size: 1.4rem;
+    border: 1px solid $darkblue;
+    margin: .6rem;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 1.5rem;
+  }
+}
 
 
 // Fonts added:
