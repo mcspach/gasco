@@ -41,7 +41,7 @@ div#form_full {
         margin-right: 1px;
       }
       @media all and (max-width: $small) { 
-        input, textarea { width: unset; font-size: 29%; padding: .5rem;}
+        input, textarea { width: unset; min-width: 55%; font-size: 30%; padding: .5rem;}
       }
       div>input {
         width: 27%;
