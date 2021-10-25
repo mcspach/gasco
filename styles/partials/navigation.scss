@@ -4,7 +4,7 @@ nav.navigation {
   z-index: 10;
   height: 10vh;
   width: 100vw;
-  background-color: $whiteblue;
+  background: linear-gradient(0deg, rgb(220, 219, 219) 0%, rgba(255,255,255,1) 35%);
 
   .navigation_wrapper {
     width: 100vw;
@@ -13,7 +13,7 @@ nav.navigation {
     align-items: center;
     justify-content: space-around;
     a.home_link {
-      height: 90%;
+      height: 80%;
       img { height: 100%;
       }
     }
