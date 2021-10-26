@@ -85,12 +85,24 @@ max-height: 700px;
 // justify-content: space-around;
 div.carousel {
   margin: 1rem auto;
+  width: 400px;
+  max-width: 60vh;
+  max-height: 90vh;
+@media all and (max-width: $small) {
   width: 300px;
-  max-height: 700px;
+  max-height: 80vh;
+  div.slide {
+    width: 300px;
+    max-height: 100%;
+  }
+}
 div.slide {
+  border: 4px solid $white;
   background: linear-gradient(0deg, rgb(220, 219, 219) 0%, rgba(255,255,255,1) 40%,  rgb(220, 219, 219) 100%);
-  width: 300px;
-  height: 590px;
+  width: 400px;
+  max-width: 60vh;
+  height: 600px;
+  max-height: 88vh;
   margin: 1rem;
   // border: 2px solid $midblue;
   img {
@@ -98,15 +110,16 @@ div.slide {
     height: auto;
   }
   div.quote_text {
-    max-width: 300px;
+    max-width: 400px;
     height: 250px;
+    max-height: 25vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
     p {
-      line-height: 2;
+      line-height: 1.7;
     }
   }
 }
