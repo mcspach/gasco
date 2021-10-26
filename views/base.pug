@@ -30,6 +30,23 @@ html(lang="en")
     meta(name="twitter:description" content=meta.data.description)
     meta(name="twitter:image" content=meta.data.image ? meta.data.image.url : '')
     link(rel="preconnect" href="https:fonts.gstatic.com")
+    //- Add the slick-theme.css if you want default styling
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css")
+    //- Add the slick-theme.css if you want default styling
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css")
+
+    style
+      include ../public/main.css
+
+  body#body
+    include ./partials/preloader
+    include ./partials/navigation
+    
+    .content#content(data-template=template)
+      block content
+
+    include ./partials/footer
+    include animations
 
     script(async='', src="https://www.googletagmanager.com/gtag/js?id=G-V0H9J0H52M")
     script.
@@ -38,17 +55,16 @@ html(lang="en")
       gtag('js', new Date());
       gtag('config', 'G-V0H9J0H52M');
 
-    style
-      include ../public/main.css
-
-  body#body
-    include ./partials/preloader
-    include ./partials/navigation
-    include ./partials/form
-    
-    .content#content(data-template=template)
-      block content
-
-    include ./partials/footer
-    include animations
-    include show_hide
+    script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
+    script.
+      $(document).ready(function(){
+        $('.carousel').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
+      });

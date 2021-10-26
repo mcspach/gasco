@@ -1,51 +1,44 @@
-div#form_full {
-  display: none;
-  transition: .2s;
-  background-color: rgba(0, 0, 0, .5);
+div.apply {
+  background-color: $grey;
   width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 4;
+  min-height: 90vh;
+  transform: translateY(10vh);
+  padding: 1rem 0;
   .form_wrapper {
+    margin: 0 auto;
     background-size: cover;
     background-position: center;
-    margin: 11vh auto;
     width: 90%;
     height: 80%;
     border: 2px solid white;
     form {
       text-align: center;
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column nowrap;
       align-items: center;
       justify-content: space-evenly;
       margin: 2% auto;
-      height: 90%;
-      width: 90%;
+      height: 94%;
+      width: 94%;
       background-color: rgba(0, 0, 0, .5);
       color: white;
-      button#close {
-        position: fixed;
-        top: 12vh;
-        left: 2vw;
-        @media all and (max-width: $medium)  {
-          display: none;
-        }
-      }
       input, textarea {
         padding: 1rem;
+        margin-top: 2rem;
         font-family: 'Dunbar Text', Helvetica, sans-serif;
         border: 2px solid $darkblue;
         width: 100%;
-        max-width: 350px;
+        max-width: 400px;
         margin-right: 1px;
       }
+      h1 { margin: 2rem;}
+      div.call_text { margin: 4rem 0; }
       @media all and (max-width: $small) { 
         input, textarea { width: unset; min-width: 55%; font-size: 30%; padding: .5rem;}
       }
       div>input {
-        width: 27%;
-        max-width: 110px;
+        width: 26%;
+        max-width: 125px;
       }
       @media all and (max-width: $small) { 
         div>input { display:block; width: unset; }

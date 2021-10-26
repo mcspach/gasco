@@ -7,13 +7,39 @@ block content
   .about
     .about_wrapper
       .section.about_banner(style='background-image: url(' + about.data[1].url + ')' alt=about.data[1].alt)
-        h2.blurry#fadeIn Working creatively...
-        h2.blurry to get you approved.
+        h2.blurry#fadeIn We get the job done.
+        h2.blurry Whatever it takes.
 
+      .heading
+        h2 Don't take our word for it
+        h2 See what our customers have to say
+      .section.quote
+        div.carousel
+          div.slide
+            div
+              img(src=testimonials.data[1].url alt=graphics.data[1].alt)
+            .quote_text
+              p "It was my pleasure working with Greg. He helped my family and I purchase our very first home... He has been a great, hard-working man, always figuring out a way to get me approved and fulfil all my requests. Greg also has a great supporting team. I really appreciated the work they did."
+              h4(style='text-align: right; font-style: italic;') - Tien Tang
+          div.slide
+            div
+              img(src=testimonials.data[2].url alt=testimonials.data[2].alt)
+            .quote_text
+              p "Thank you dearly for your kind note I recently recieved in the mail, as well as making the path to homeownership so fast, efficient and easy. We feel really blessed by all the hard work everyone did for us to get us in our home. We always refer The Greg Gasco Team.
+                br
+                |Thank you again and continue doing an amazing job!"
+              h4(style='text-align: right; font-style: italic;') - Erika Awes
+          div.slide
+            div
+              img(src=testimonials.data[3].url alt=testimonials.data[3].alt)
+            .quote_text
+              p "Through the whole process they always made it so easy... Once you meet someone like Greg and you know you can trust them, stay with it."
+              h4(style='text-align: right; font-style: italic;') - Liz Aguilar
+      
       .section.team
         img(src=about.data[4].url alt=about.data[4].alt) 
-        button.team
-          a(href='https://www.bancorpretail.com/thegascoteam/team-2') Contact Info
+        //- button.team
+        //-   a(href='https://www.bancorpretail.com/thegascoteam/team-2') Contact Info
 
       .section.maps
         h2 Gasco Team Locations:
@@ -26,15 +52,6 @@ block content
             a(href="https://bit.ly/3sFOP2v")
               h1 Porterville Office
               img(src=about.data[3].url alt=about.data[3].alt)
-
-      .section.quote
-        div
-          img(src=graphics.data[10].url alt=graphics.data[10].alt)
-        .quote_text
-          p "It was my pleasure working with Greg. He helped my family and I purchase our very first home... He has been a great, hard-working man, always figuring out a way to get me approved and fulfil all my requests. Greg also has a great supporting team. I really appreciated the work they did."
-          h4(style='text-align: right; font-style: italic;') - Proud Home Owner
-        div
-          img(src=graphics.data[9].url alt=graphics.data[9].alt)
 
       .section.bg_blue
         a(href="https://pro.bancorp.com/dr/c/com8o")

@@ -69,7 +69,6 @@ const handleRequest = async api => {
   const logos = await api.getSingle('logos')
   const photos = await api.getSingle('photos')
   const graphics = await api.getSingle('graphics')
-  // const preloader = await api.getSingle('preloader')
 
   return {
     graphics,
@@ -92,10 +91,13 @@ app.get('/about', async (req, res) => {
   const api = await initApi(req)
   const defaults = await handleRequest(api)
   const about = await api.getSingle('about')
-
+  const testimonials = await api.getSingle('testimoni')
+  console.log(testimonials)
+  
   res.render('pages/about', {
     ...defaults,
-    about
+    about,
+    testimonials
   })
 })
 
@@ -107,6 +109,15 @@ app.get('/media', async (req, res) => {
   res.render('pages/media', {
     ...defaults,
     media
+  })
+})
+
+app.get('/apply', async (req, res) => {
+  const api = await initApi(req)
+  const defaults = await handleRequest(api)
+
+  res.render('pages/apply', {
+    ...defaults
   })
 })
 
