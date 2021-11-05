@@ -8,7 +8,8 @@ block content
     .home_wrapper 
       .section#section_1(style='background-image:url(' + photos.data[1].url + ')' alt=photos.data[1].alt)
         .section_text 
-          button(href='#form' onclick="div_show()") Become a Client
+          button
+            a(href='apply') Become a Client
           div.blurry#fadeIn
             h1.text_white Approval
             h2.text_white is&nbsp;within&nbsp;your&nbsp;grasp
@@ -48,7 +49,8 @@ block content
             h5.text_white The Gasco Team is here to make the home-buying experience smooth and simple.
             br
             h4 Don't sit around dreaming, get the process moving.
-          button.dark(href='#form' onclick="div_show()") Become a Client
+          button.dark
+            a(href='apply') Become a Client
         .image(style='background-image:url(' + photos.data[3].url + ')' alt=photos.data[3].alt)
       .section.services#services
         .image(style='background-image:url(' + photos.data[2].url + ')' alt=photos.data[2].alt)
@@ -71,7 +73,8 @@ block content
               p Have decent credit? We can provide ZERO overlays for qualifying home-buyers.Elliminating investor overlays will get you a better deal and give our team the final decision on your loan approval.
             div(style='background-image:url(' + graphics.data[7].url + ')' alt=graphics.data[7].alt) 
               h6 The list goes on... 
-              button Learn More 
+              button
+                a(href='apply') Learn More 
       .section.bg_blue
         a(href="https://pro.bancorp.com/dr/c/com8o")
           .details_section_text
