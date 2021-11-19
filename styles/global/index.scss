@@ -3,12 +3,11 @@
 @import 'typography.scss';
 @import 'animations.scss';
 
-
-@media all and (max-width: $medium)  {
-    .no_desktop { display: none; }
+@media all and (min-width: $medium)  {  
+  .no_desktop { display: none; }
 }
 
-@media all and (min-width: $medium) {
+@media all and (max-width: $medium) {
   .no_mobile { display:none; }
 }
 
